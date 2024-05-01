@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=40.8.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hp_lstm"
+version = "0.1.0"
+description = "HP-LSTM: Hawkes-Process-LSTM based detection of DDos attack for in-vehicle network"
+authors = [
+    { name = "Xingyu Li", email = "3123531304@shu.edu.cn" },
+    { name = "Ruifeng Li", email = "liruifeng8182@shu.edu.cn" },
+    { name = "jamesnulliu", email = "jamesnulliu@shu.edu.cn" },
+]
+readme = "README.md"
+requires-python = ">=3.7, <3.13"
+license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Unix",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["torch", "torchvision"]
+
+[tool.setuptools]
+packages = ["hp_lstm"]
+package-dir = { "" = "." }
